@@ -6,10 +6,13 @@ if (edad >= 18) {
   alert("Lamentablemente No puedes acceder al préstamo");
 }
 
-for (let i = 1; i <= 10; i++) {
+let suma = 0;
 
-    console.log(i);
-  }
+for (let i = 1; i <= 10; i++) {
+  suma += i;
+}
+
+console.log(`La suma de los números del 1 al 10 es ${suma}`);
 
 
 let opcion = 0;
