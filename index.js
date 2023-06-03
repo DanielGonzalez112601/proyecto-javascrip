@@ -39,6 +39,7 @@ alert(`Has seleccionado la opción ${opcion}: ${nombreOpcion}`);
 
 
 let monto = parseInt(prompt("Ingresa el monto del préstamo:"));
+
 let cuotas = parseInt(prompt("Ingresa la cantidad de cuotas:"));
 
 
