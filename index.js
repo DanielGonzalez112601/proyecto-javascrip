@@ -1,6 +1,4 @@
-
 let edad = parseInt (prompt("Hola , Ingresa tu edad:"));
-
 
 if (edad >= 18) {
   alert("Genial, Puedes acceder al préstamo");
@@ -63,5 +61,5 @@ class Persona {
       console.log(`Hola, mi nombre es ${this.nombre} ${this.apellido} y tengo ${this.edad} años.`);
     }
   }
-  
+
   const persona = new Persona("Daniel", "González", 26);
