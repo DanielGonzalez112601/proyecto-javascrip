@@ -66,3 +66,43 @@ class Persona {
   }
 
   const persona = new Persona("Daniel", "González", 26);
+
+
+//   funcion
+
+  function sumar(a, b) {
+    return a + b;
+  }
+  
+  let numero1 = 5;
+  let numero2 = 3;
+  let resultado = sumar(numero1, numero2);
+  console.log(resultado);
+
+//   array 
+
+  function sumarArray(array) {
+    let suma = 0;
+    
+    for (let i = 0; i < array.length; i++) {
+      suma += array[i];
+    }
+    
+    return suma;
+  }
+  
+  let numeros = [1, 2, 3, 4, 5];
+  let resultado2 = sumarArray(numeros);
+  console.log(resultado2);
+
+// funcions de orden superior
+
+function ejecutarFuncion(funcion) {
+    funcion();
+  }
+  
+  function saludar() {
+    console.log("¡Hola! Esta función fue ejecutada por otra función.");
+  }
+
+  ejecutarFuncion(saludar);
