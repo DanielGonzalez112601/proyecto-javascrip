@@ -57,8 +57,8 @@ function solicitarPrestamo() {
 
     alert("Su préstamo ha sido aprobado. ¡Gracias por su preferencia!");
 }
-let tasaInteres = 0.1; 
-let historialSolicitudes = []; 
+let tasaInteres = 0.1;
+let historialSolicitudes = [];
 
 // Funciones
 function procesarSolicitud(solicitud) {
@@ -84,6 +84,46 @@ function mostrarResultado(resultado) {
         "\nTotal a pagar: $" + resultado.totalPagar.toFixed(2));
 }
 
+
+
+
+
+function buscarSolicitudPorNombre(nombre) {
+    let resultados = historialSolicitudes.filter(function (solicitud) {
+        return solicitud.nombre.toLowerCase() === nombre.toLowerCase();
+    });
+
+    return resultados;
+}
+
+function filtrarSolicitudesPorCantidadMinima(cantidadMinima) {
+    let resultados = historialSolicitudes.filter(function (solicitud) {
+        return solicitud.cantidad >= cantidadMinima;
+    });
+
+    return resultados;
+}
+
+let historialSolicitudes2 = [];
+
+
+historialSolicitudes.push({ nombre: "Juan", cantidad: 1000, plazo: 12 });
+historialSolicitudes.push({ nombre: "María", cantidad: 500, plazo: 6 });
+historialSolicitudes.push({ nombre: "Pedro", cantidad: 1500, plazo: 24 });
+historialSolicitudes.push({ nombre: "Ana", cantidad: 2000, plazo: 18 });
+
+
+let resultadoBusqueda = buscarSolicitudPorNombre("María");
+console.log(resultadoBusqueda);
+
+
+let resultadoFiltrado = filtrarSolicitudesPorCantidadMinima(1500);
+console.log(resultadoFiltrado);
+
+
+
+
+
 class Persona {
     constructor(nombre, apellido, edad) {
         this.nombre = nombre;
@@ -97,7 +137,7 @@ class Persona {
 }
 
 const persona = new Persona("Daniel", "González", 26);
-const persona2 = new Persona ("juan", "Perez", 40 );
+const persona2 = new Persona("juan", "Perez", 40);
 
 
 //   funcion
