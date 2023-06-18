@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(65, 65, 202, 0.705);
+}
+.h1{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    padding: 40px;
+}
+/* .boton{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100px;
+    height: 80px;
+    border-radius: 10px;
+
+} */
+.boton {
+    width: 200px;
+    height: 60px;
+    background-color: #959eac;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  /* Estilos para el efecto hover del botón */
+  .boton:hover {
+    background-color: #2d5bb3;
+  }
